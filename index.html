@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d83c8afec0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-auto" style="background-image: url(./images/Image.png)">
+    <!-- header -->
+    <header>
+      <nav
+        id="navbar"
+        class="flex justify-between items-center sm:px-8 sm:py-6 md:px-12 py-4 px-4 lg:px-16"
+      >
+        <!--header logo -->
+        <div id="nav-lgo">
+          <img class="w-32" src="./images/logo.png" alt="" />
+        </div>
+
+        <!-- nav items -->
+        <div id="nav-items">
+          <!-- menu-icon -->
+          <div
+            class="menu-icon md:hidden relative flex flex-col gap-1 cursor-pointer"
+            id="menu-icon"
+          >
+            <div class="bar1 w-6 h-1 rounded-full bg-white"></div>
+            <div class="bar2 w-6 h-1 rounded-full bg-white"></div>
+            <div class="bar3 w-6 h-1 rounded-full bg-white"></div>
+          </div>
+
+          <!-- small device sidebar -->
+          <div
+            id="menu-links"
+            class="menu-links duration-200 absolute md:hidden top-0 -right-1/2 w-1/2 h-full bg-gray-900 z-10"
+          >
+            <i
+              id="close-icon"
+              class="fa-solid fa-xmark text-4xl absolute right-4 top-4 text-gray-400 hover:text-white cursor-pointer sm:right-8 sm:top-6"
+            ></i>
+            <ul id="menu-links-container" class="mt-16 px-8 text-gray-400">
+              <li
+                class="text-lg my-6 border-b-2 border-gray-400 hover:text-white cursor-pointer hover:border-white"
+              >
+                Home
+              </li>
+              <li
+                class="text-lg my-6 border-b-2 border-gray-400 hover:text-white cursor-pointer hover:border-white"
+              >
+                Cart
+              </li>
+              <li
+                class="text-lg my-6 border-b-2 border-gray-400 hover:text-white cursor-pointer hover:border-white"
+              >
+                About
+              </li>
+              <li
+                class="text-lg my-6 border-b-2 border-gray-400 hover:text-white cursor-pointer hover:border-white"
+              >
+                Features
+              </li>
+              <li
+                class="text-lg my-6 border-b-2 border-gray-400 hover:text-white cursor-pointer hover:border-white"
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+
+          <!-- large device normal nav items -->
+          <div class="nav-links">
+            <ul class="hidden md:flex text-white text-xl gap-x-7 lg:gap-x-16">
+              <li class="hover:text-gray-500 duration-100 cursor-pointer">
+                Home
+              </li>
+              <li class="hover:text-gray-500 duration-100 cursor-pointer">
+                About
+              </li>
+              <li class="hover:text-gray-500 duration-100 cursor-pointer">
+                Features
+              </li>
+              <li class="hover:text-gray-500 duration-100 cursor-pointer">
+                Contact
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cart-icon hidden md:block">
+          <img src="./images/cart.png" alt="cart-icon" class="w-10" />
+        </div>
+      </nav>
+    </header>
+    <!-- header finished -->
+
+    <section
+      id="main-section"
+      class="px-4 lg:flex lg:flex-row-reverse absolute top-1/2 -translate-y-1/2 items-center lg:gap-12"
+    >
+      <div class="home-img min-w-64 w-1/2 mx-auto lg:w-1/2 lg:mx-0">
+        <img class="" src="./images/grocery-image.png" alt="main-image" />
+      </div>
+      <div class="home-text text-white text-center -mt-16 lg:mt-0">
+        <h1 class="text-3xl font-bold lg:text-5xl">Groceries</h1>
+        <h1 class="text-3xl lg:text-5xl">
+          <span class="font-bold">delivery in</span> 15 mins
+        </h1>
+        <p class="text-sm mt-5 max-w-96 mx-auto lg:text-lg">
+          Grocify offer a wide range of products, including fresh products,
+          meats, dairy, baked goods and non-perishable item.
+        </p>
+        <div class="buttons flex justify-center gap-4 mt-4">
+          <button
+            class="px-4 py-3 bg-yellow-400 text-sm rounded-full lg:text-lg lg:gap-6"
+          >
+            Order Now
+          </button>
+          <button>Download App</button>
+        </div>
+      </div>
+    </section>
+
+<script src="./script.js" type="module"></script> 
+ </body>
+</html>
